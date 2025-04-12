@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #ffe6e6, #fff5f5);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    min-height: 100vh;       /* Ensure the body takes up the full height of the viewport */
+}
+
+header {
+    background-color: #c62828;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.mainbody {
+    padding-top: 80px;
+    flex: 1;                /* Ensures this section takes the available space */
+}
+
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.6em;
+    color: #c62828;
+    margin-bottom: 20px;
+}
+
+.section p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #555;
+}
+
+.section ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #c62828;
+    font-size: 1.2em;
+}
+
+
