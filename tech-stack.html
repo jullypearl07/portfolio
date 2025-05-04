@@ -2,33 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tech Stack | My Portfolio</title>
-    <link rel="stylesheet" href="tech-stack.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darling Jully Pearl Buyog | Tech Stack</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="mainbody">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="tech-stack.html">Tech Stack</a></li>
-            
-            </ul>
-        </nav>
-    </header>
+<body class="font-firasans text-gray-800 relative">
+    <div class="flex flex-col min-h-screen">
+        <header class="navbar-black fixed top-0 w-full z-50 shadow-md">
+            <nav class="py-4">
+                <ul class="flex justify-center space-x-10">
+                    <li><a href="index.html" class="nav-link font-bold hover:text-accent transition-colors duration-300">Home</a></li>
+                    <li><a href="about.html" class="nav-link font-bold hover:text-accent transition-colors duration-300">About Me</a></li>
+                    <li><a href="tech-stack.html" class="nav-link font-bold hover:text-accent transition-colors duration-300">Tech Stack</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="tech-stack" class="section">
-        <h2>Tech Stack</h2>
-        <p>Here are some of the techs I am familiar with:</p>
-        <ul>
-            <li>Android Studio</li>
-            <li>CSS</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>HTML</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-
+        <main class="flex-grow pt-24 px-4 pb-8">
+            <section id="tech-stack" class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
+                <h2 class="text-4xl text-center font-bold text-primary-dark mb-6">Tech Stack</h2>
+                <p class="text-xl text-center text-gray-700 mb-8">Here are some of the techs I am familiar with:</p>
+                
+                <div class="flex flex-wrap justify-center gap-8 mt-8">
+                    <div class="tech-item w-24 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Android_Studio_Trademark.svg" alt="Android Studio" class="w-16 h-16 object-contain mx-auto mb-2">
+                        <p class="font-bold text-sm">Android Studio</p>
+                    </div>
+                    <div class="tech-item w-24 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="w-16 h-16 object-contain mx-auto mb-2">
+                        <p class="font-bold text-sm">CSS</p>
+                    </div>
+                    <div class="tech-item w-24 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" class="w-16 h-16 object-contain mx-auto mb-2">
+                        <p class="font-bold text-sm">C++</p>
+                    </div>
+                    <div class="tech-item w-24 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" class="w-16 h-16 object-contain mx-auto mb-2">
+                        <p class="font-bold text-sm">C</p>
+                    </div>
+                    <div class="tech-item w-24 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="w-16 h-16 object-contain mx-auto mb-2">
+                        <p class="font-bold text-sm">HTML</p>
+                    </div>
+                    <div class="tech-item w-24 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-16 h-16 object-contain mx-auto mb-2">
+                        <p class="font-bold text-sm">JavaScript</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -2,60 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darling Jully Pearl Buyog | Home</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-    <style>
-        html{
-            font-family: Merriweather;
-        }
-        p {
-      color: white; 
-      text-align: center;
-      font-size: 20px;
-      max-width: 600px;
-      line-height: 1.6;
-      
-    }
-
-    .desc-msg{
-        color: black;
-    }
-
-    .desc ms
-      </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="mainbody">
-    <video src="bg.mp4" autoplay muted loop></video>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="tech-stack.html">Tech Stack</a></li>
+<body class="font-firasans text-gray-800">
+    <div class="flex flex-col min-h-screen relative">
+        <header class="navbar-black fixed top-0 w-full z-10 shadow-md">
+            <nav class="py-4">
+                <ul class="flex justify-center space-x-10">
+                    <li><a href="index.html" class="nav-link font-semibold hover:text-accent transition-colors duration-300">Home</a></li>
+                    <li><a href="about.html" class="nav-link font-semibold hover:text-accent transition-colors duration-300">About Me</a></li>
+                    <li><a href="tech-stack.html" class="nav-link font-semibold hover:text-accent transition-colors duration-300">Tech Stack</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="home" class="section">
-            <div class="circle-container">  
-                <img src="images/buyog.jpg" alt="pfp" class="circle-image">
-            </div>
-                <h1 class="welcome msg">Darling Jully Pearl Buyog</h1> 
-            <div class="desc">
-                <p class="desc-msg">Aspiring programmer Darling Jully Pearl Buyog is passionate about learning and growing in the world of software development. With a keen interest in coding and problem-solving, she is dedicated to expanding her skills and contributing to innovative projects in the tech industry.</p> 
-            </div>
-        </section>
+        <main class="flex-grow pt-24 px-4">
+            <section class="max-w-4xl mx-auto bg-white bg-opacity-80 rounded-lg shadow-lg p-8 text-center">
+                <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-5 border-primary shadow-lg">
+                    <img src="images/buyog.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-4xl uppercase tracking-wider font-bold text-gray-800 mb-4">Darling Jully Pearl Buyog</h1>
+                <div class="flex justify-center items-center">
+                    <p class="text-lg text-gray-700">IT Student | Web Developer | Tech Enthusiast</p>
+                </div>
+            </section>
+        </main>
 
-        <footer>
-            <div class="desc">
-                
-            </div>
-        </footer>
+
     </div>
+    
+    <!-- Scripts -->
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* Base styles */
 html, body {
     height: 100%;
     margin: 0;
     color: #333;
-    font-family: FONTNIJULLY;
+    font-family: 'Fira Sans', sans-serif;
     flex-direction: column;  /* Stack elements vertically */
     min-height: 100vh;  
 }
@@ -57,6 +58,8 @@ nav ul li a:hover {
     padding-top: 80px;
     flex: 1;   
     position: relative;
+    /* Make z-index higher than -1 to appear above Vanta background */
+    z-index: 1;
 }
 
 /* Main section grows to fill space */
@@ -64,6 +67,10 @@ nav ul li a:hover {
     flex: 1;
     text-align: center;
     padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add some transparency */
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Profile image styles */
@@ -86,7 +93,7 @@ nav ul li a:hover {
 /* Welcome message */
 h1.welcome {
     font-size: 2.8em;
-    color: white    ;
+    color: #333; /* Change text color from white to dark for better visibility against Vanta background */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -104,20 +111,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-video{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    
-}
-
-@font-face {
-    font-family: 'FONTNIJULLY'; 
-    src: url('Merriweather.ttf'); 
 }
