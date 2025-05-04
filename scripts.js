@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   if (window.VANTA) {
-    VANTA.FOG({
+    VANTA.BIRDS({
       el: "body",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      highlightColor: 0xe6e6e6,
-      lowlightColor: 0xfa032e,
-      baseColor: 0x6b6b6b
+      scale: 1.00,
+      scaleMobile: 1.00,
+      birdSize: 1.10,
+      speedLimit: 1.00,
+      alignment: 24.00,
+      cohesion: 13.00
     });
   }
 });
